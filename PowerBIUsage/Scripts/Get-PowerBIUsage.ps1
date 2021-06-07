@@ -6,12 +6,12 @@ param(
 )
 
 #Azure AD Application Details
-$appId = 'Application (client) ID gathered in Azure AD Application Step 5'
-$tenantId = 'Directory (tenant) ID gathered in Azure AD Application Step 5'
+$appId = '898d045e-f4b8-4116-94f4-5cc89ef53b85'
+$tenantId = 'be8c0789-cb3d-4f3a-94d7-7c9301ca4803'
 $domain = 'primary domain used with this tenant - contoso.org'
-$clientSecret = "Client secret gathered in Azure AD Application Step 7"
+$clientSecret = "be09f696-39ce-4643-a0de-c59780631113"
 #Power BI Streaming Dataset Details
-$powerBiEndpoint = "Endpoint URL gathered in Power BI Streaming Dataset Step 5"
+$powerBiEndpoint = "https://api.powerbi.com/beta/be8c0789-cb3d-4f3a-94d7-7c9301ca4803/datasets/5b05b597-aca8-4859-ac39-5054e3ff10c7/rows?key=t2V55b5f%2F7AJm7kpZ%2B78%2F%2B8VE2TXAt5j60esM4uqwrdlI8VrgRMeEqpLyeYKbSyFENRvuJ60U%2FBBHoxrsQxx2w%3D%3D"
 
 function Get-MgmtAccessToken($appId, $domain, $clientSecret) {
     $resource = 'https://manage.office.com' 
